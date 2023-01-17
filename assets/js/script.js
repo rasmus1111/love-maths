@@ -1,3 +1,23 @@
+document.addEventListener("DOMContentLoaded", function() {
+    let buttens = document.getElementsByTagName("button");
+
+        for ( let button of buttens){
+            button.addEventListener("click", funtion()){
+                if (this.getAttribute("data-type") === "submit"){
+                    alert("you clicked Submit");
+                }else {
+                    let gameType = this.getAttribute("data-type");
+                    alert(`you clicked ${gameType}`);
+                }
+            }
+
+
+        }
+    
+
+   
+})
+
 function runGame( ){
 
 }
@@ -26,5 +46,5 @@ function displaySubtractQuestion(){
 }
 
 function displayMultiplyQuistion(){
-    
+
 }
